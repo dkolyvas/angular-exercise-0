@@ -1,0 +1,12 @@
+ <div class="mx-3"> 
+ <app-user-input-component (OnSendWord)="classifyWord($event)" (OnReset)="reset()" >
+    </app-user-input-component>
+</div>
+<div class="row mx-3">
+    <div class="col">
+        <app-even-length-words [words]="evenwords" ></app-even-length-words>
+    </div>
+    <div class="col">
+        <app-odd-length-words [words]="oddwords" ></app-odd-length-words>
+    </div>
+</div>

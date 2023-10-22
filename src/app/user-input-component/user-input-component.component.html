@@ -1,0 +1,9 @@
+<div>
+    <form  [formGroup]="form">
+        <label for="word" class="form-text">Please insert a word</label>
+        <input type="text" class="form-control" formControlName = "inputWord" id="word">
+        <button type="submit" class="btn btn-primary" (click)="sendWord()">SendWord</button>
+        <button class="btn btn-danger" (click)="reset()">Reset</button>
+    </form>
+
+</div>
